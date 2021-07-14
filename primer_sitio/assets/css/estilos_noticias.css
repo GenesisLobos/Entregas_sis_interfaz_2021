@@ -1,0 +1,132 @@
+@font-face {
+    src: url(../fonts/bookman_old_style.ttf);
+    font-family: Bookman-old-style;
+}
+
+body {
+    background-image: url("../img/patron_ojos.jpg");
+    background-size: 30%;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: Bookman-old-style;
+    font-weight:lighter;
+    font-size: 70px;
+    text-align: left ;
+    padding-left: 10px;
+}
+
+p {
+    color: #272727;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+i {
+    color: #272727;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 17px;
+    font-weight: 545;
+}
+
+blockquote{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    color:seashell;
+    border-left: #000000 4px solid;
+    border-right: #000000 4px solid;;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:rgba(20, 20, 20, 0.9) ; 
+
+}
+
+.imagen_cabecera {
+    position: relative;
+    margin-left: 550px;
+    margin-top: -500px;
+  }
+
+.relato {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    border-left: #fff000 3px solid;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.bajada__noticia {
+    color: rgb(180, 7, 7);
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-top: -25px;
+    border-bottom: 2px solid rgb(44, 13, 13);
+}
+
+.imagen_costado {
+    position: absolute;
+    width: 12%;
+    margin-left: -20px;
+    margin-top: -25px;
+  }
+
+.texto_conimagen_izquierda{
+    color: #272727;
+    font-family:Arial, Helvetica, sans-serif ; 
+    font-size: 15px;
+    font-weight: bold ;
+    padding-left: 170px;
+    padding-right: 20px;
+}
+
+.imagen_ojos {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+.imagen_niña1 {
+    position: absolute;
+    width: 12%;
+    margin-left: -20px;
+  }
+
+.imagen_niña2 {
+  position: absolute;
+  width: 10%;
+  margin-left: 900px;
+}
+
+.texto_conimagen_derecha { 
+    color: #272727;
+    font-family:Arial, Helvetica, sans-serif ; 
+    font-size: 15px;
+    font-weight: bold ;
+    padding-left: 20px;
+    padding-right: 150px;
+}
+
+#envoltorio__principal {
+    background-color: rgba(228, 227, 227, 0.9);
+    width: 70%;
+    padding: 20px;
+    padding-bottom: -20px;
+    border-radius: 8px;
+    margin: -20px auto 0px auto;
+}

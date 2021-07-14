@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Fingers Landingpage</title>
+
+    <link rel="stylesheet" href="assets/ccs/hojadeestilos.css">
+    <link href="assets/ccs/tinyslide.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/tinyslide.js"></script>
+
+    <link href="assets/ccs/styles.css" rel="stylesheet">
+    <script src="assets/js/musicplayer-min.js"></script>
+
+    
+</head>
+<body>
+<div class="envoltorio_principal">
+    <img class="fondo_superior" src="assets/img/fondo_superior.png" alt="Mick Taylor y Mick Jagger">
+    <div class="titulo">The Rolling <br>Stones</div> 
+    <div class="contenido">
+    <p class="resena_stones">Rolling Stones es una banda británica de rock originaria de Londres. La banda se formó en abril de 1962 Están considerados 
+        como una de las más grandes e influyentes bandas de toda la historia del rock,​ siendo una de las agrupaciones que sentó las 
+        bases del rock contemporáneo. Contando desde sus inicios con el favor de la crítica, algunos de sus materiales están 
+        considerados de los mejores de todos los tiempos; entre ellos destacan Beggars Banquet (1968), Let It Bleed (1969), 
+        Sticky Fingers (1971) y quizá su mejor obra, Exile on Main St. (1972). En 1989 fueron incluidos en el Salón de la Fama 
+        del Rock and Roll, y en 2004 la revista estadounidense Rolling Stone los colocó en el puesto nº4 en su lista de Los 50 
+        mejores artistas de todos los tiempos. Ningún grupo de rock hasta la fecha ha sostenido tan duradera 
+        y todavía mundialmente reconocida trayectoria como The Rolling Stones; con Jagger, Richards y Watts como miembros 
+        fundadores en activo, continúan siendo la banda más longeva de la historia del rock.</p>
+    </div>
+
+    <section id="tiny" class="tinyslide">
+        <aside class="slides">
+          <figure>
+            <img src="assets/img/rollingstones_1.jpg" alt="Rolling Stones posando" />
+          </figure>
+          <figure>
+            <img src="assets/img/rollingstones_2.jpg" alt="Rolling Stones posando" />
+          </figure>
+          <figure>
+            <img src="assets/img/rollingstones_3.jpg" alt="Rolling Stones posando" />
+          </figure>
+        </aside>
+      </section>
+      <script>
+        var tiny = $('#tiny').tiny().data('api_tiny');
+      </script>
+
+</div>
+    <img class="rollingwalbum" src="assets/img/rollingwalbum.png" alt="The Rollings Stones posando en ropa interior con la portada del album Sticky Fingers">
+    <div class="envoltorio_secundario">
+   <div class=resena_album>Sticky Fingers</div>
+    <dd class="texto_resenaa">Lanzado el 23 de abril de 1971, Sticky Fingers contiene algunas de las canciones más populares de los 
+    Rolling Stones, incluidas Wild Horses y Brown Sugar. Con temas que aludían al consumo de drogas, como 
+    Sister Morphine, el álbum que incorporó por primera vez el mítico logo de la lengua que diseñara John Pasche
+    ha superado la prueba del tiempo y sigue siendo, sin envejecer ni un ápice, uno de los favoritos de los 
+    amantes del rock.Su portada, clasificada en el puesto 22 de la lista Billboard de las mejores ilustraciones 
+    de todos los tiempos, alcanzó fama mundial por mostrar en primer plano el ‘paquete’ de un hombre en vaqueros.</dd>
+
+    <div class="track_list">
+        <h2 class="track">Track list</h1>
+        <h4 class="side_a">Side A</h4>
+        <p class="lista_cancionesa">1. Brown Sugar
+           <br>
+           2. Sway
+           <br>
+           3. Wild Horses
+           <br>
+           4. Can't You Hear Me Knocking
+           <br>
+           5. You Gotta Move
+        </p>
+        <h4 class="side_b">Side B</h4>
+        <p class="lista_cancionesb"> 6. Bitch
+            <br>
+            7. I Got The Blues
+            <br>
+            8. Sister Morphine
+            <br>
+            9. Dead Flowers
+            <br>
+            10. Moonlight Miles
+         </p>
+    </div>
+    <img class="rolling_album" src="assets/img/stickyfinger_album.png" alt="Album Sticky Fingers junto con foto de la banda">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <div class="example">
+        <ul class="playlist">
+            <li data-cover="assets/img/stickyfingers_caratula.png" data-artist="The Rolling Stones"><a
+                    href="assets/mp3/therollingstones_brown sugar.mp3">Brown Sugar</a></li>
+
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/john-doe.jpg" data-artist="The Rolling Stones"><a
+                    href="assets/mp3/rollingstones_sway.mp3">Sway</a></li>
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/jimi_hendrix.jpg" data-artist="The Rolling Stones"><a
+                    href="assets/mp3/therollingstones _wildhorses.mp3">Wild Horses</a></li>
+        </ul>
+    </div>
+    <script>
+
+        $(".example").musicPlayer({
+            elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'], // ==> This will display in  the order it is inserted
+            //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
+            //controlElements: ['backward', 'play', 'forward', 'stop'],
+            //timeElements: ['current', 'duration'],
+            //timeSeparator: " : ", // ==> Only used if two elements in timeElements option
+            //infoElements: [  'title', 'artist' ],
+
+            //volume: 10,
+            autoPlay: true,
+            //loop: true,
+
+            onPlay: function () {
+                $('body').css('background', 'black');
+            },
+            onPause: function () {
+                $('body').css('background', 'green');
+            },
+            onStop: function () {
+                $('body').css('background', '#141942');
+            },
+            onFwd: function () {
+                $('body').css('background', 'white');
+            },
+            onRew: function () {
+                $('body').css('background', 'blue');
+            },
+            volumeChanged: function () {
+                $('body').css('background', 'red');
+            },
+            progressChanged: function () {
+                $('body').css('background', 'orange');
+            },
+            trackClicked: function () {
+                $('body').css('background', 'brown');
+            },
+            onMute: function () {
+                $('body').css('background', 'grey');
+            },
+        });
+    </script>
+
+    <div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JmquS1sULiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Lobster-Regular;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+.envoltorio_principal{
+    background-color:lightgreen;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.fondo_superior{
+    width: 70%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.titulo{
+    font-family: Lobster-Regular;
+    color: #000;
+    font-size: 100px;
+    margin-left: -550px;
+    margin-top: 50px;
+    align-self: flex-start;
+}
+
+.contenido{
+    width: 700px;
+    height: 200px;
+    margin-left: -190px;
+    margin-top: 300px;
+    align-self: flex-start
+}
+
+.resena_stones{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    color:rgb(66, 66, 66);
+}
+
+.rollingwalbum{
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+
+.envoltorio_secundario{
+    background-color: blue;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    align-content:space-between;
+}
+
+
+.resena_album{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: yellow;
+    align-self: flex-start;
+    margin:20px;
+
+}
+
+.texto_resenaa{
+    width: 1200px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 120%;
+    color: white;
+    font-weight: bold;
+    align-content: flex-start
+}
+
+.track_list {
+    background-color: rgb(20, 20, 20);
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content:flex-start;
+    margin: 5%;
+}
+
+.track{
+    font-family:'Courier New', Courier, monospace;
+    color:aliceblue;
+    margin-left: 5%;
+}
+
+.side_a{
+    font-family:'Courier New', Courier, monospace;
+    color: blanchedalmond;
+    margin-left: 5%;
+}
+
+.lista_cancionesa{
+    font-family:'Courier New', Courier, monospace;
+    color: blanchedalmond;
+    margin: 5%;
+}
+
+.side_b{
+    font-family:'Courier New', Courier, monospace;
+    color: blanchedalmond;
+    margin-left: 5%;
+}
+.lista_cancionesb{
+    font-family:'Courier New', Courier, monospace;
+    color: blanchedalmond;
+    margin-left: 5%;
+}
+
+.rolling_album{
+    width: 50%;
+    align-self: flex-end;
+    transform: translateX(-40%);
+    display: inline-block;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
